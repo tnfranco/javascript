@@ -8,11 +8,8 @@ console.log("trabalhando com listas")
 
 const listaDeDestinos = new Array(
     `Salvador`
-    `São Paulo`
-    `Rio de Janeiro`
-    `Curitiba`
-    `Belo Horizonte`
 );
 
+listaDeDestinos.push('Manaus')
 console.log("Listas de destinos: ");
 console.log(listaDeDestinos);
