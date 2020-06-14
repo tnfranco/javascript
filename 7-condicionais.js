@@ -16,6 +16,9 @@ if(idadeComprador >= 18) {
     listaDeDestinos.splice(1,1); 
 }
 
+else{
+    console.log("Comprador é menor de idade e não pode realizar a compra");
+}
 
 console.log(listaDeDestinos);
 
