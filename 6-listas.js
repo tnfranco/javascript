@@ -19,4 +19,4 @@ console.log(listaDeDestinos);
 listaDeDestinos.splice(1,1); // remove o item da lista, de acordo com sua posição
 console.log(listaDeDestinos);
 
-console.log(listaDeDestinos[1]); // imprimi um item na lista de acordo com a posição que voce por
+console.log(listaDeDestinos[1]); // imprimi um item especifico na lista de acordo com a posição que voce por
