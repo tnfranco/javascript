@@ -1,18 +1,17 @@
-class Cliente { 
-    
-    constructor(nome, cpf, agencia, saldo) {
-      this.nome = nome;
-      this.cpf = cpf;
-      this.agencia = agencia;
-      this.saldo = saldo;
-    }
-}
-  
-  cliente1 = new Cliente("Tiago", 4234234242423, 0220, 9999999.99);
-  cliente2 = new Cliente("Adriano", 94397573939, 0220, 9439349.94);
-  cliente3 = new Cliente("Aline", 7499393943943, 0220, 9439439.94);
+import {Cliente} from "./Cliente.js"
+import {ContaCorrente} from "./ContaCorrente.js"
 
-    console.log(cliente1, cliente2, cliente3);
+const cliente1 = new Cliente("Ricardo", 11122233309);
+const cliente2 = new Cliente("Alice", 88822233309);
 
 
-  
+const contaCorrenteRicardo = new ContaCorrente(1001, cliente1);
+contaCorrenteRicardo.depositar(500);
+contaCorrenteRicardo.sacar(100);
+
+const conta2 = new ContaCorrente(102, cliente2);
+
+let valor = 200;
+contaCorrenteRicardo.tranferir(valor, conta2);
+
+console.log(contaCorrenteRicardo);
