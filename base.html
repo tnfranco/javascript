@@ -8,6 +8,40 @@
         <h1>Lógica de Programação com Javascript</h1>
     </body>
         <script>
+        // fazer jogador1 digitar um numero
+        // fazer jogador2 digitar outro numero
+        // se forem iguais, mostrar a mensagem "empate"
+        // sortear um numero entre 0 e 1
+        // se o numero sorteado for 0, ganha quem escolher o numero Menor
+        // se o numero sorteado for 1, ganha quem escolher o numero Maior7
+
         
+        var nJogador1 = prompt("Digite um numero");
+        nJogador1 = parseInt(nJogador1);
+        
+        var nJogador2 = prompt("Digite um numero");
+        nJogador2 = parseInt(nJogador2);
+        
+        if (nJogador1 === nJogador2) {
+            alert("Empate");
+        } else {
+            var sorteio = parseInt( Math.random() * 2 );
+        if (sorteio === 0) {
+            if(nJogador1 < nJogador2) {
+                alert("Jogador1 ganhou o jogo");
+            } else {
+                alert("Jogador2 ganhou o jogo");
+            }
+        }else {
+            if (nJogador1 > nJogador2) {
+                alert("Ganhou o Jogador2");
+            } else {
+                alert("Jogador 1 ganhou o jogo");
+            }
+        }
+
+         }
+       
+
     </script>
 </html>
