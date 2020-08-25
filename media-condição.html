@@ -1,0 +1,32 @@
+<!doctype html> 
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação com Javascript</h1>
+    </body>
+        <script>
+        /* Pedir pro usuario digitar dois numeros e mostrar uma mensagem
+        informando se foi aprovado ou nao.
+        a nota de corte é 5.
+        contudo, se uma das notas for zero, reprova automaticamente */
+
+
+        var nota1 = prompt("Digite um numero");
+        nota1 = parseInt(nota1);
+        
+        var nota2 = prompt("Digite um numero");
+        nota2 = parseInt(nota2);
+        
+        media = (nota1 + nota2) / 2;
+
+        if(media > 5 && nota1 && nota2 > 0){
+            alert("Aluno Aprovado");
+        }else {
+            alert("Aluno Reprovado");
+        }
+
+    </script>
+</html>
